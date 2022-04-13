@@ -19,6 +19,10 @@ public class AutorDTO {
         this.descricao = descricao;
     }
 
+    public Autor toModel() {
+        return new Autor(nome, descricao);
+    }
+
     public String getNome() {
         return nome;
     }
